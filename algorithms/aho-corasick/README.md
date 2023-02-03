@@ -3,3 +3,7 @@
 ## 학습 블로그
 
  - https://pangtrue.tistory.com/305
+
+## 문제들
+
+ - [10538: 빅 픽쳐](https://www.acmicpc.net/problem/10538) / \[PENDING\] / [source](../../sources/10538.cpp)
