@@ -16,7 +16,7 @@ Source code for BOJ(Baekjoon Online Judge)
 
 ### Optimization
 
- - [Dynamic : 동적 계획법](/algorithms/persistent-segment-tree/README.md)
+ - [Dynamic : 동적 계획법](/algorithms/dynamic/README.md)
 
 ## Participation
 - https://github.com/14KGun/BOJ-Problem-Solve
