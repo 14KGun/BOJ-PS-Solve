@@ -1,4 +1,4 @@
-# Dynamic Programming Optimization : 동적 계획법 최적화
+# Knuth Optimization
 
 ## 학습 블로그
 
