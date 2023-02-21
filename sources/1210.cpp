@@ -9,13 +9,13 @@ using namespace std;
 
 int n, m, s, e, a[N];
 pair<int, int> p[M];
-int r[N * 2][N * 2], fs[N * 2][N * 2];
+int r[N * 2][N * 2];
 bool mafia[N];
 
 priority_queue<pair<int, int> > Q;
 int d[N * 2], path[N * 2];
 int pt_len, ptt[N * 2], pt[N * 2];
-bool check[N * 2];
+bool check[N * 2], vis[N * 2];
 
 int dijkstra() {
     for (int i = 0; i <= 2 * n + 1; i++) d[i] = -INF, check[i] = false;
@@ -53,6 +53,13 @@ int dijkstra() {
     return d[2 * n + 1];
 }
 
+void dfs(int lev) {
+    vis[lev] = true;
+    for (int i = 0; i <= n * 2 + 1; i++) {
+        if (r[lev][i] > 0 && !vis[i]) dfs(i);
+    }
+}
+
 int main() {
     scanf("%d %d %d %d", &n, &m, &s, &e);
     for (int i = 1; i <= n; i++) scanf("%d", &a[i]);
@@ -73,10 +80,13 @@ int main() {
         for (int i = 1; i < pt_len; i++) {
             r[pt[i]][pt[i + 1]] -= flow;
             r[pt[i + 1]][pt[i]] += flow;
-            fs[pt[i]][pt[i + 1]] -= flow;
-            fs[pt[i + 1]][pt[i]] += flow;
         }
     }
 
-    
+    dfs(0);
+    for (int i = 1; i <= n; i++) {
+        if (vis[i * 2 - 1] && !vis[i * 2]) {
+            printf("%d ", i);
+        }
+    }
 }
