@@ -20,6 +20,7 @@ Source code for BOJ(Baekjoon Online Judge)
 
 ### Dynamic Programming Optimization
 
+ - [Convex Hull Trick : 볼록 껍질 최적화](/algorithms/convex-hull-trick/README.md)
  - [Knuth Optimization](/algorithms/knuth-optimization/README.md)
 
 ## Participation
