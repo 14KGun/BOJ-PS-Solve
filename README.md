@@ -23,6 +23,10 @@ Source code for BOJ(Baekjoon Online Judge)
  - [Convex Hull Trick : 볼록 껍질 최적화](/algorithms/convex-hull-trick/README.md)
  - [Knuth Optimization](/algorithms/knuth-optimization/README.md)
 
+### Math
+
+ - [Fast Fourier Theorem : 고속 푸리에 변환](/algorithms/fft/README.md)
+
 ## Participation
 - https://github.com/14KGun/BOJ-Problem-Solve
 - https://github.com/Bluehorse01/BOJ_PS
